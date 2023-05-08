@@ -40,7 +40,7 @@ def transcribe():
     filename = secure_filename(file.filename)
     audio_array, sr = librosa.load(file, sr=16000) # Convert file to np.ndarray object
     result = model.transcribe(audio_array)
-
+    print(result)
     # Rest of the code
     with open("{}.txt".format(filename), "w") as f:
         f.write(result["text"])
