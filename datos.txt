@@ -1,0 +1,48 @@
+Personas mayores y cuidadoras:
+
+Nombre: María López
+Foto: María López
+En situación de extrema vulnerabilidad:
+
+Nombre: Javier Martínez
+Foto: Javier Martínez
+Infancia:
+
+Nombre: Sofía García
+Foto: Sofía García
+Jóvenes:
+
+Nombre: Alejandro Rodríguez
+Foto: Alejandro Rodríguez
+Inmigrantes:
+
+Nombre: Aisha Ahmed
+Foto: Aisha Ahmed
+Solicitantes de asilo y refugio:
+
+Nombre: Hassan Ali
+Foto: Hassan Ali
+Mujeres en dificultad social:
+
+Nombre: Carmen Sánchez
+Foto: Carmen Sánchez
+Desempleados y en precariedad laboral:
+
+Nombre: Carlos Gómez
+Foto: Carlos Gómez
+Reclusos y exreclusos:
+
+Nombre: Raúl Fernández
+Foto: Raúl Fernández
+Con discapacidad:
+
+Nombre: Laura Torres
+Foto: Laura Torres
+Con problemas de salud:
+
+Nombre: Martín Morales
+Foto: Martín Morales
+Población en general:
+
+Nombre: Ana González
+Foto: Ana González

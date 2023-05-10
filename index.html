@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS for the circular pictures */
+   
+    .circle img{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+
+    /* CSS for the modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+      background-color: white;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .grid-container{
+        margin: 0 auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px; 
+    }
+  </style>
+</head>
+<body>
+    <h1 style="text-align: center">¿Con quién te identificas más?</h1>
+    <p>Mira sus historias haciendo click sobre la imagen y selecciona la historia que se parezca más a la tuya</p>
+  <div class="grid-container">
+    <!-- Grid elements -->
+    <div class="circle" onclick="openModal('Modal 1')">
+   
+      <img src="/images/1.jpg" alt="Circle 1" style="max-width: 100%; max-height: 100%;">
+      <label>
+        <input type="checkbox">
+        María López
+      </label>
+    </div>
+    <div class="circle" onclick="openModal('Modal 2')">
+        
+      <img src="/images/5.jpg" alt="Circle 2" style="max-width: 100%; max-height: 100%;">
+      <label>
+        <input type="checkbox">
+        Javier Martínez
+      </label>
+    </div>
+    <div class="circle" onclick="openModal('Modal 2')">
+        
+        <img src="/images/3.jpg" alt="Circle 2" style="max-width: 100%; max-height: 100%;">
+        <label>
+          <input type="checkbox">
+          Sofía García
+        </label>
+      </div>
+      <div class="circle" onclick="openModal('Modal 2')">
+        
+        <img src="/images/11.jpg" alt="Circle 2" style="max-width: 100%; max-height: 100%;">
+        <label>
+          <input type="checkbox">
+          Alejandro Salas
+        </label>
+      </div>
+      <div class="circle" onclick="openModal('Modal 2')">
+        
+        <img src="/images/6.jpg" alt="Circle 2" style="max-width: 100%; max-height: 100%;">
+        <label>
+          <input type="checkbox">
+          Aisha Ahmed
+        </label>
+      </div>
+      <div class="circle" onclick="openModal('Modal 2')">
+        
+        <img src="/images/14.jpg" alt="Circle 2" style="max-width: 100%; max-height: 100%;">
+        <label>
+          <input type="checkbox">
+          Hassan Ali
+        </label>
+      </div>
+      <div class="circle" onclick="openModal('Modal 2')">
+        
+        <img src="/images/5.jpg" alt="Circle 2" style="max-width: 100%; max-height: 100%;">
+        <label>
+          <input type="checkbox">
+          Carmen Sánchez
+        </label>
+      </div>
+      <div class="circle" onclick="openModal('Modal 2')">
+        
+        <img src="/images/5.jpg" alt="Circle 2" style="max-width: 100%; max-height: 100%;">
+        <label>
+          <input type="checkbox">
+          Carlos Gómez
+        </label>
+      </div>
+      <div class="circle" onclick="openModal('Modal 2')">
+        
+        <img src="/images/5.jpg" alt="Circle 2" style="max-width: 100%; max-height: 100%;">
+        <label>
+          <input type="checkbox">
+          Raúl Fernandez
+        </label>
+      </div>
+      <div class="circle" onclick="openModal('Modal 2')">
+        
+        <img src="/images/5.jpg" alt="Circle 2" style="max-width: 100%; max-height: 100%;">
+        <label>
+          <input type="checkbox">
+          Laura Torres
+        </label>
+      </div>
+      <div class="circle" onclick="openModal('Modal 2')">
+        
+        <img src="/images/5.jpg" alt="Circle 2" style="max-width: 100%; max-height: 100%;">
+        <label>
+          <input type="checkbox">
+          Martín Morales
+        </label>
+      </div>
+      <div class="circle" onclick="openModal('Modal 2')">
+        
+        <img src="/images/5.jpg" alt="Circle 2" style="max-width: 100%; max-height: 100%;">
+        <label>
+          <input type="checkbox">
+          Ana González
+        </label>
+      </div>
+    
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p id="modal-text"></p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NIDn-CXrV88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+</div>
+<a href="/1.html" style="text-align: right; width: 100%">Siguiente></a>
+
+  <script>
+    // Open the modal and set the text
+    function openModal(text) {
+      document.getElementById("modal-text").innerHTML = text;
+      document.getElementById("modal").style.display = "block";
+    }
+
+    // Close the modal
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+</body>
+</html>
